@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/loach99/warehouse/static/css/main.a99caf1b.css",
+    "main.js": "/loach99/warehouse/static/js/main.70ee8e38.js",
+    "static/media/free-icon-alert-4493789.png": "/loach99/warehouse/static/media/free-icon-alert-4493789.8b645a2372ed294f151a.png",
+    "index.html": "/loach99/warehouse/index.html",
+    "static/media/Icon.svg": "/loach99/warehouse/static/media/Icon.3ba75fa0f610c88fd982.svg",
+    "static/media/Feature.svg": "/loach99/warehouse/static/media/Feature.4f5a618775439f4d8ad27e4a34c77d37.svg",
+    "static/media/arrow.svg": "/loach99/warehouse/static/media/arrow.9da0755df7a46f02716ff5242ba2cea6.svg",
+    "static/media/closeIcon.svg": "/loach99/warehouse/static/media/closeIcon.b73f4256c046b8270f0dd1513d5d9436.svg",
+    "static/media/select_arrow.svg": "/loach99/warehouse/static/media/select_arrow.1dbfbf26d996118bd63f.svg",
+    "main.a99caf1b.css.map": "/loach99/warehouse/static/css/main.a99caf1b.css.map",
+    "main.70ee8e38.js.map": "/loach99/warehouse/static/js/main.70ee8e38.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a99caf1b.css",
+    "static/js/main.70ee8e38.js"
+  ]
+}
