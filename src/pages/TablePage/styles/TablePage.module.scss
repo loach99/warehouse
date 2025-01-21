@@ -1,0 +1,55 @@
+@import '../../../variables.scss';
+
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 1000px;
+
+    &__header {
+        padding: 24px 20px 44px 20px;
+        display: flex;
+        justify-content: space-between;
+
+        >div:nth-child(1) {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: space-between;
+
+            &:nth-child(1)>div {
+                background-color: $btnColor;
+                color: #fff;
+                font-size: 13px;
+                border-radius: 4px;
+                padding: 3px 8px;
+            }
+        }
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 12px 0;
+
+        >div:nth-child(2)>button {
+            background-color: $btnColor;
+            color: #fff;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            padding: 14px 14px 14px 48px;
+            font-size: 14px;
+            position: relative;
+        }
+        
+        >div:nth-child(2)>button::before {
+            content: '+';
+            font-size: 25px;
+            top: 13%;
+            left: 12%;
+            position: absolute;
+        }
+    }
+}

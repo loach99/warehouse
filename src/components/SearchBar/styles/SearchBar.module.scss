@@ -1,0 +1,41 @@
+@import '../../../variables.scss';
+
+.searchBar {
+    position: relative;
+
+    >form {
+        display: flex;
+    }
+
+    >form>input {
+        border: 1px solid $borderGray;
+        border-radius: 4px 0 0 4px;
+        padding: 8px 12px 8px 32px;
+        width: 100%;
+        outline: none;
+        border-right: none;
+    }
+
+    >form>button {
+        border-radius: 0 4px 4px 0;
+        border: none;
+        padding: 14px 14px;
+        background-color: #514A4A;
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+    }
+}
+
+.searchBar::before {
+    content: '';
+    background-image: url(../../../assets/Header/Icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+}

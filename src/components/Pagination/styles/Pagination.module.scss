@@ -1,0 +1,90 @@
+@import "../../../variables.scss";
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 20px 20px 20px;
+    >div{
+        display: flex;
+        gap: 12px;
+        position: relative;
+        align-items: center;
+        >.pagination__item{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            pointer-events: auto;
+            z-index: 1;
+        }
+        >.pagination__prev{
+            border: 2px solid $borderGray;
+            border-radius: 6px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: absolute;
+            pointer-events: auto;
+        }
+        >.pagination__next{
+            border: 2px solid $borderGray;
+            border-radius: 6px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: absolute;
+            left: 260px;
+        }
+        >.pagination__item__active{
+            border: 2px solid $btnColor;
+            border-radius: 6px;
+        }
+        >.pagination__arrow{
+            width: 40px;
+            height: 40px;
+            border: 1px solid #F2EEEE;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }    
+    }
+}
+
+.pagination__select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #514A4A;
+    color: #fff;
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 76px;
+    height: 40px;
+    background-image: url(../../../assets/Buttons/select_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 25px center;
+    cursor: pointer;
+  }
+
+  .pagination__select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+  .pagination__select option {
+    padding: 10px;
+  }
