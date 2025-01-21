@@ -21,12 +21,12 @@
 1. Клонируйте репозиторий:
    ```bash
    git clone https://github.com/loach99/warehouse.git
-Перейдите в каталог проекта:
 
 2. Перейдите в каталог проекта:
    ```bash
     cd warehouse
+    ```
 3.Установите зависимости:
-  ```bash
+   ```bash
   npm install
- ```
+   ```
