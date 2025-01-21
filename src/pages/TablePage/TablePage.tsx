@@ -28,12 +28,13 @@ const TablePage = () => {
         isCreate,
         setIsCreate
     } = useModal();
+    const { data: { result: items, total }, error, loading } = useItems({ currentPage, pageSize, isSort, itemName, isEdit });
 
     useEffect(() => {
         authUser('admin', 'admin')
     }, [])
+    console.log(error)
 
-    const { data: { result: items, total }, error, loading } = useItems({ currentPage, pageSize, isSort, itemName, isEdit });
     return (
         <div className={styles.table}>
             <div className={styles.table__header}>
@@ -54,23 +55,22 @@ const TablePage = () => {
                     </div>
                 </div>
             </div>
-            {loading ? <div className={styles.loader}>Loading...</div> :
-                <Table
-                    error={error}
-                    loading={loading}
-                    items={items}
-                    setIsSort={setIsSort}
-                    isSort={isSort}
-                    setIsModalOpen={setIsModalOpen}
-                    setEditHolders={setEditHolders} />
+            <Table
+                error={error}
+                loading={loading}
+                items={items}
+                setIsSort={setIsSort}
+                isSort={isSort}
+                setIsModalOpen={setIsModalOpen}
+                setEditHolders={setEditHolders} />
+            {!error ?
+                <Pagination
+                    total={total}
+                    pageSize={pageSize}
+                    setPageSize={setPageSize}
+                    setCurrentPage={setCurrentPage}
+                    currentPage={currentPage} /> : null
             }
-
-            <Pagination
-                total={total}
-                pageSize={pageSize}
-                setPageSize={setPageSize}
-                setCurrentPage={setCurrentPage}
-                currentPage={currentPage} />
             <EditModal
                 editHolders={editHolders}
                 isModalOpen={isModalOpen}

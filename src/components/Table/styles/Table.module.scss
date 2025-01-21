@@ -1,9 +1,9 @@
 .table {
     border-spacing: 0;
     border-collapse: collapse;
-
     >thead {
         background-color: #F6F4F4;
+
         >tr {
             >th {
                 text-align: left;
@@ -11,9 +11,11 @@
                 padding: 0 24px;
                 height: 44px;
             }
+
             >th:nth-child(4) {
                 width: 80px;
             }
+
             >th:nth-child(1) {
                 cursor: pointer;
             }
@@ -22,6 +24,8 @@
     }
 
     >tbody {
+        position: relative;
+      
         >tr {
             >td {
                 text-align: left;
@@ -51,4 +55,8 @@
 .table__name__active::after {
     content: ' ▿';
     cursor: pointer;
+}
+.table__err{
+    display: flex;
+    justify-content: center;
 }

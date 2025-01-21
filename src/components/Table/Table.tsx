@@ -7,7 +7,14 @@ const Table = ({ items, setIsSort, isSort, setIsModalOpen, setEditHolders, error
         setEditHolders({ id, name, description, measurement_units, code })
         setIsModalOpen(true)
     }
+    if (error) {
+        return <div className={styles.table__err}>
+            <ErrModal />
+        </div>
+    }
+
     return (
+
         <table className={styles.table}>
             <thead>
                 <tr>
@@ -18,24 +25,18 @@ const Table = ({ items, setIsSort, isSort, setIsModalOpen, setEditHolders, error
                 </tr>
             </thead>
             <tbody>
-                {error ?
-                    <ErrModal/> :
-                    <>
-                        {items.map((item) => (
-                            <tr key={item.id}>
-                                <td>{item.name}</td>
-                                <td>{item.measurement_units}</td>
-                                <td>{item.code}</td>
-                                <td>
-                                    <div onClick={() => handleEdit(item.id, item.name, item.description, item.measurement_units, item.code)} className={styles.table__edit}>
-                                        <img src={pen} alt="Редактировать" />
-                                    </div>
-                                </td>
-                            </tr>
-                        ))}
-                    </>
-                }
-
+                {items.map((item) => (
+                    <tr key={item.id}>
+                        <td>{item.name}</td>
+                        <td>{item.measurement_units}</td>
+                        <td>{item.code}</td>
+                        <td>
+                            <div onClick={() => handleEdit(item.id, item.name, item.description, item.measurement_units, item.code)} className={styles.table__edit}>
+                                <img src={pen} alt="Редактировать" />
+                            </div>
+                        </td>
+                    </tr>
+                ))}
             </tbody>
         </table>
     );
