@@ -1,7 +1,7 @@
 import { IEditValue } from "../../types/interfaces";
 
 export const patchItem = async (data: IEditValue) => {
-    const response = await fetch(`https://hcateringback-dev.unitbeandev.com/api/wh/items/${data.id}`, {
+    const response = await fetch(`/api/wh/items/${data.id}`, {
         method: 'PATCH',
         headers: {
             'Authorization': `${localStorage.getItem('access_token')}`,
