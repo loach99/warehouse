@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from 'react';
 import { IItems, IUseItems } from '../types/interfaces';
 import { getItems } from '../api/user/getItems';

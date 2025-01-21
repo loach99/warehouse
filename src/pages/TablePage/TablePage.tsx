@@ -7,7 +7,6 @@ import { authUser } from "../../api/auth/authUser";
 import useModal from "../../hooks/useModal";
 import useItems from "../../hooks/useItems";
 import Table from "../../components/Table/Table";
-import ErrModal from "../../components/Modals/ErrModal/ErrModal";
 const TablePage = () => {
     const initialState = {
         id: '',
