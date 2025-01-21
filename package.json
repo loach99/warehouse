@@ -45,5 +45,5 @@
     "sass": "^1.83.4",
     "style-loader": "^4.0.0"
   },
-  "proxy": "https://hcateringback-dev.unitbeandev.com/api"
+  "proxy": "https://hcateringback-dev.unitbeandev.com/"
 }

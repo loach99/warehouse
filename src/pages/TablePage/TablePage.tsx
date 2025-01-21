@@ -33,7 +33,6 @@ const TablePage = () => {
     useEffect(() => {
         authUser('admin', 'admin')
     }, [])
-    console.log(error)
 
     return (
         <div className={styles.table}>
