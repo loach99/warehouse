@@ -1,5 +1,6 @@
+
 export const authUser = async (email: string, password: string) => {
-    fetch('/api/auth/login', {
+    fetch(`${process.env.REACT_APP_API}/api/auth/login`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -1,7 +1,7 @@
 import { IEditValue } from "../../types/interfaces";
 
 export const createItems = async (data: IEditValue) => {
-    const response = await fetch(`/api/wh/items`, {
+    const response = await fetch(`${process.env.REACT_APP_API}/api/wh/items`, {
         method: 'POST',
         headers: {
             'Authorization': `${localStorage.getItem('access_token')}`,
