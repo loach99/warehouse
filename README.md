@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# Warehouse
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Обзор проекта
 
-## Available Scripts
+Проект **Warehouse** представляет собой простое и интерактивное приложение для управления таблицами, построенное на **React** и **TypeScript**. В проекте реализованы такие функции, как модальные окна, поиск, сортировка по имени и пагинация. Приложение позволяет пользователям удобно просматривать, искать и управлять данными таблицы.
 
-In the project directory, you can run:
+Проект развернут на **GitHub Pages** и доступен по следующему адресу:  
+[https://loach99.github.io/warehouse](https://loach99.github.io/warehouse)
 
-### `npm start`
+## Основные функции
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Модальное окно**: позволяет выполнять действия, такие как редактирование и создание элементов таблицы.
+- **Поиск**: позволяет пользователям фильтровать данные по запросу, что упрощает поиск конкретных строк в таблице.
+- **Сортировка по имени**: пользователи могут сортировать данные по столбцу "Название" в порядке возрастания или убывания.
+- **Пагинация**: поддерживает пагинацию, позволяя пользователям перемещаться между страницами данных.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Установка
 
-### `npm test`
+Чтобы запустить проект локально, выполните следующие шаги:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/loach99/warehouse.git
 
-### `npm run build`
+2. Перейдите в каталог проекта:
+   ```bash
+    cd warehouse
+    ```
+3. Установите зависимости:
+   ```bash
+    npm install
+   ```
+4. Запустите проект в режиме разработки:
+   ```bash
+    npm run start
+   ```
+   После этого приложение будет доступно по адресу http://localhost:3000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ## Зависимости
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Основные зависимости
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **react**: библиотека для создания пользовательских интерфейсов.
+- **react-dom**: взаимодействие с DOM для приложений на React.
+- **react-hook-form**: библиотека для работы с формами.
 
-### `npm run eject`
+### Зависимости для разработки
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **@types/react**: типы для React в TypeScript.
+- **@types/react-dom**: типы для React DOM в TypeScript.
+- **sass**: препроцессор для работы с SCSS.
+- **gh-pages**: утилита для деплоя на GitHub Pages.

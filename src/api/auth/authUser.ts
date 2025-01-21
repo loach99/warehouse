@@ -1,5 +1,5 @@
 export const authUser = async (email: string, password: string) => {
-    fetch('https://hcateringback-dev.unitbeandev.com/api/auth/login', {
+    fetch('/auth/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

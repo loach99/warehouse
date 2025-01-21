@@ -1,8 +1,9 @@
 {
-  "homepage": "https://github.com/loach99/warehouse",
+  "homepage": "https://loach99.github.io/warehouse",
   "name": "warehouse",
   "version": "0.1.0",
   "private": true,
+  
   "dependencies": {
     "cra-template-typescript": "1.2.0",
     "react": "^19.0.0",
@@ -43,5 +44,6 @@
     "gh-pages": "^6.3.0",
     "sass": "^1.83.4",
     "style-loader": "^4.0.0"
-  }
+  },
+  "proxy": "https://hcateringback-dev.unitbeandev.com/api"
 }
