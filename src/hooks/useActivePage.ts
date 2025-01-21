@@ -13,7 +13,6 @@ const useActivePage = ({ initialPage, totalPages, setCurrentPage }: IUseActivePa
       setActiveIndex(page);
     }
   };
-
   return [activeIndex, setPage] as const;
 };
 

@@ -119,7 +119,6 @@ const EditModal = ({ isModalOpen, setIsModalOpen, editHolders, setIsEdit, isCrea
                                 </form>
                             </div>
                         }
-
                     </div>
                     <div className={styles.modal__buttons}>
                         <button onClick={() => setIsModalOpen(false)}>Отмена</button>

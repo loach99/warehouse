@@ -1,10 +1,8 @@
-import { createPortal } from "react-dom";
 import styles from './styles/ErrModal.module.scss'
 import err from '../../../assets/MiscIcons/free-icon-alert-4493789.png'
 const modalElem = document.getElementById('modal');
 const ErrModal = () => {
     if (!modalElem) return null
-
     return (
         <div className={styles.modal__error}>
             <div>
@@ -16,7 +14,6 @@ const ErrModal = () => {
                 </p>
             </div>
         </div>
-
     )
 }
 

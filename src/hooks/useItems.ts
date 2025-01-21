@@ -8,7 +8,7 @@ const useItems = ({ currentPage, pageSize, isSort, itemName, isEdit }: IUseItems
     useEffect(() => {
         try {
             setLoading(true);
-            getItems(currentPage, pageSize, isSort, itemName)
+            getItems({currentPage, pageSize, isSort, itemName})
                 .then((result) => {
                     if (result.ok) {
                         result.json()

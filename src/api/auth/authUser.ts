@@ -1,5 +1,6 @@
+import { IUser } from "../../types/interfaces"
 
-export const authUser = async (email: string, password: string) => {
+export const authUser = async ({email, password}:IUser) => {
     fetch(`${process.env.REACT_APP_API}/api/auth/login`, {
         method: 'POST',
         headers: {

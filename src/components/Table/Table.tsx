@@ -1,8 +1,8 @@
 import styles from "./styles/Table.module.scss";
 import pen from "../../assets/Buttons/Icon.svg";
-import { TableProps } from "../../types/interfaces";
+import { ITableProps } from "../../types/interfaces";
 import ErrModal from "../Modals/ErrModal/ErrModal";
-const Table = ({ items, setIsSort, isSort, setIsModalOpen, setEditHolders, error, loading }: TableProps) => {
+const Table = ({ items, setIsSort, isSort, setIsModalOpen, setEditHolders, error }: ITableProps) => {
     const handleEdit = (id: string, name: string, description: string, measurement_units: string, code: string) => {
         setEditHolders({ id, name, description, measurement_units, code })
         setIsModalOpen(true)

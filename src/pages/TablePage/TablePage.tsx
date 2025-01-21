@@ -31,7 +31,7 @@ const TablePage = () => {
     const { data: { result: items, total }, error, loading } = useItems({ currentPage, pageSize, isSort, itemName, isEdit });
 
     useEffect(() => {
-        authUser('admin', 'admin')
+        authUser({email:'admin',password:'admin'})
     }, [])
 
     return (

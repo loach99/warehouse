@@ -1,6 +1,5 @@
 import TablePage from './pages/TablePage/TablePage';
-function App() {
-
+const App = () => {
   return (
     <TablePage />
   );
