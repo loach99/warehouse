@@ -3,8 +3,8 @@ import { IUsePagination } from '../types/interfaces';
 const usePagination = ( { total, pageSize, setCurrentPage }: IUsePagination) => {
   const maxVisiblePages = 6;
   const [totalPages, setTotalPages] = useState<number>(Math.max(1, Math.round(total / pageSize)));
-  const [activeIndex, setActiveIndex] = useState<number>(1);
-  const [navigationRange, setNavigationRange] = useState<[number, number]>([1, 6]);
+  const [activeIndex, setActiveIndex] = useState<number>(localStorage.getItem('page') ? Number(localStorage.getItem('page')) : 1);
+  const [navigationRange, setNavigationRange] = useState<[number, number]>(localStorage.getItem('range') ? JSON.parse(localStorage.getItem('range') as string) : [1, maxVisiblePages]);
 
   const updateNavigationRange = (page: number) => {
     const [currentStart, currentEnd] = navigationRange;
@@ -38,8 +38,8 @@ const usePagination = ( { total, pageSize, setCurrentPage }: IUsePagination) => 
       const newEnd = Math.min(newTotalPages, newStart + maxVisiblePages - 1);
 
       return [newStart, newEnd];
-
     });
+    
     setActiveIndex(1);
   }, [total, pageSize]);
 

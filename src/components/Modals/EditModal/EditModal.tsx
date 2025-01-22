@@ -5,8 +5,8 @@ import close from '../../../assets/Buttons/closeIcon.svg'
 import { useForm } from "react-hook-form";
 import { IEditModal, IEditValue, IItems } from "../../../types/interfaces";
 import { useEffect } from "react";
-import { patchItem } from "../../../api/user/patchItem";
-import { createItems } from "../../../api/user/createItems";
+import { patchItem } from "../../../api/items/patchItem";
+import { createItems } from "../../../api/items/createItems";
 import { useError } from "../../../hooks/useError";
 import ErrModal from "../ErrModal/ErrModal";
 
@@ -90,7 +90,7 @@ const EditModal = ({ isModalOpen, setIsModalOpen, editHolders, setIsEdit, isCrea
                             </div>
                         </div>
                         {error ?
-                           <ErrModal/>
+                            <ErrModal />
                             :
                             <div className={styles.modal__content}>
                                 <div>
